@@ -120,7 +120,7 @@ function Category() {
 
         console.log("source video data",data);
 
-        let selectCategory=allCategory.find(item=>item.id==categoryId)
+        let selectCategory = allCategory.find(item => item.id === categoryId)
         console.log("target category details",selectCategory);
         selectCategory.allvideos.push(data)
         console.log("updated target category details",selectCategory);

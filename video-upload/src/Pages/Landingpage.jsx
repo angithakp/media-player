@@ -29,7 +29,11 @@ function Landingpage() {
             </Col>
 
             <Col lg={4}>
-                <img className='img-fluid' src="https://img.freepik.com/premium-photo/girl-listens-music-with-headphones_917664-17079.jpg" alt="no image" />
+                <img
+  className="img-fluid"
+  src="https://img.freepik.com/premium-photo/girl-listens-music-with-headphones_917664-17079.jpg"
+  alt="Woman listening to music with headphones"
+/>
             </Col>
 
         </Row>

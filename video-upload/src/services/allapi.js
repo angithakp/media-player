@@ -65,9 +65,9 @@ import { commonRequest } from "./commonrequest";
 
   // update category
 
-  export const updateCategory=async(id,body)=>{
-      commonRequest("PUT",`${BASE_URL}/category/${id}`,body)
-  }
+  export const updateCategory = async (id, body) => {
+  return await commonRequest("PUT", `${BASE_URL}/category/${id}`, body);
+};
 
 
 

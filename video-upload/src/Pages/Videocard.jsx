@@ -3,7 +3,6 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import { Trash2 } from 'react-feather';
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { Addhistory, deleteVideo } from '../services/allapi';
 import { v4 as uuidv4 } from 'uuid';
@@ -27,7 +26,7 @@ function Videocard({card,handledeleteStatus,insidecategory}) {
 
     const {caption,url}=card
 
-    if(uid!=""&&caption!=""&&url!=""&&cardTime!=""){
+    if (uid !== "" && caption !== "" && url !== "" && cardTime !== "") {
       const body={
         id:uid,cardName:caption,url,date:cardTime
       }
@@ -86,7 +85,15 @@ function Videocard({card,handledeleteStatus,insidecategory}) {
         </Modal.Header>
         <Modal.Body>
 
-        <iframe width={'100%'} height={'400px'} src={`${card?.url}?autoplay=1`} title="Venmegham Video Song | 2018 | Tovino Thomas | Jude Anthany Joseph | Nobin Paul | Joe Paul" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe
+  width="100%"
+  height="400"
+  src={`${card?.url}?autoplay=1`}
+  title={card?.caption}
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
+></iframe>
 
         </Modal.Body>
        
