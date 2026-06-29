@@ -1,0 +1,95 @@
+
+
+
+REACT---js library (front end development)
+------------------------------------------
+
+Basic commands
+
+- to create project:npx create-react-app projectname
+- to run project :npm start
+- to install ract material:npm install @mui/material @emotion/react @emotion/styled
+- to build a project: npm run build
+- to install react-bootstrap: npm install react-bootstrap bootstrap
+- to install react icons:npm i feather-icons-react
+- to install react router dom:npm i react-router-dom (redirect to another page)
+
+Basic concepts
+
+-reusable component based approach
+-JSX:javascript Xml
+
+front end difference
+
+
+concept               angular                 react                           vue
+------------------------------------------------------------------------------------------------
+1.developer          framework----google      library----meta/facebook      framework---opensource
+2.Language           typescript               javascript                    javascript
+3.Dom                real dom                 virtual dom                   virtual dom
+4.data sharing       two way data binding     oneway data binding           two way data binding
+
+
+
+react       components base aplications
+
+   components : create a js file having a name start with capital letter
+
+              two types of components
+
+
+              1.Class based components--- stateful component
+              2.function based component--- stateless component
+
+
+              react hook--- hook is predefined function and name start with use key word
+
+               hook syntax
+
+             use predefined-function()
+
+             use state()              state-used to store values
+
+             state sreation syntax
+
+
+            const[statename,]
+
+
+
+state:state is used to store values (also state has an advantage to transfer value) we can share to child component
+props:props is used to share data between parent and child
+conditional rendering
+
+
+npm axios:- Features
+
+-Make XMLHttpRequests from the browser
+-Make http requests from node.js
+-Supports the Promise API
+-Intercept request and response
+-Transform request and response data
+-Cancel requests
+-Automatic transforms for JSON data
+-Automatic data object serialization to multipart/form-data and x-www-form-urlencoded body encodings
+-Client side support for protecting against XSRF
+
+
+Request Config
+These are the available config options for making requests. Only the url is required. Requests will default to GET if method is not specified.
+
+
+  // `url` is the server URL that will be used for the request
+ ( url: '/user',)
+
+  // `method` is the request method to be used when making the request
+ ( method: 'get', // default)
+
+  // `baseURL` will be prepended to `url` unless `url` is absolute.
+  // It can be convenient to set `baseURL` for an instance of axios to pass relative URLs
+  // to methods of that instance.
+ ( baseURL: 'https://some-domain.com/api/',)
+
+
+   // `data` is the data to be sent as the request body
+  // Only applicable for request methods 'PUT', 'POST', 'DELETE , and 'PATCH'
